@@ -1,0 +1,172 @@
+/* Reset */
+body,
+ul,
+li,
+button,
+p,
+h1,
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* style 시작*/
+body {
+    background: radial-gradient(96.74% 2176.79% at 3.59% 5.28%, #F0F4FF 0%, #A5B6EE 100%);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 84.22px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+fieldset,
+input {
+    border: none;
+}
+
+/* 타이머 전체 */
+.wrapper {
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 72px;
+}
+
+.wrapper .logo {
+    width: 244px;
+    margin: 0 auto;
+    padding-bottom: 60px;
+}
+
+.wrapper .logo img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.wrapper .timer {
+    text-align: center;
+    padding: 48px 44px 40px;
+    background: linear-gradient(to bottom right, #5B75B4, #324577);
+
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+
+.wrapper .timer .timer-header {
+    color: white;
+    margin-bottom: 33px;
+    font-size: 24px;
+}
+
+.wrapper .timer .timer-header::after {
+    content: ' ';
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    margin-top: 23px;
+    background: linear-gradient(#3D538A, #5B75B4);
+    vertical-align: top;
+}
+
+/* 타이머 내부 */
+.wrapper form {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-bottom: 40px;
+}
+
+.wrapper form fieldset {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.wrapper form fieldset label {
+    font-size: 12px;
+    font-weight: bold;
+    color: #A5B6EE;
+}
+
+.wrapper form fieldset input {
+    width: 80px;
+    height: 80px;
+    margin-top: 4px;
+    text-align: center;
+    border: 1px solid #354971;
+    background: linear-gradient(to bottom right, #4C65A0, #324577);
+    font-family: 'Pretendard';
+    color: white;
+    font-size: 40px;
+    font-weight: bold;  
+
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.wrapper form fieldset label::before {
+    content: ' ';
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 1px;
+    background-color: #354971;
+    left: 12px;
+    top: 70px;
+}
+
+.wrapper form fieldset label::after {
+    content: ' ';
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 1px;
+    background-color: #354971;
+    right: 12px;
+    top: 70px;
+}
+
+.wrapper form fieldset input:focus {
+    outline: 1px solid #A5B6EE;
+}
+
+.wrapper form fieldset+fieldset::after {
+    content: ' ';
+    position: absolute;
+    background-image: url(./images/dot.png);
+    background-repeat: no-repeat;
+    width: 6px;
+    height: 26px;
+    left: -14px;
+    top: 54px;
+}
+
+/* 하단 버튼 */
+.wrapper button {
+    width: 112px;
+}
+
+.wrapper button img {
+    vertical-align: top;
+    width: 100%;
+}
+
+.wrapper .pauseBtn {
+    display: none;
+}
+
+.wrapper .resetBtn {
+    margin-left: 12px;
+}

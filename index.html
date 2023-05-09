@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simple Timer">
+    <title>타이머 만들기</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <section class="wrapper">
+        <header class="logo">
+            <h1><img src="./images/weniv-logo.png" alt="위니브 로고"></h1>
+        </header>
+
+        <article class="timer">
+            <header class="timer-header">
+                <h3>TIMER</h3>
+            </header>
+
+            <form action="">
+                <fieldset>
+                    <label for="HOUR">HRS</label>
+                    <input id="hour" type="text" value="00" maxlength="2">
+                </fieldset>
+                <fieldset>
+                    <label for="MINUTE">MIN</label>
+                    <input id="minute" type="text" value="00" maxlength="2">
+                </fieldset>
+                <fieldset>
+                    <label for="SECOND">SEC</label>
+                    <input id="second" type="text" value="00" maxlength="2">
+                </fieldset>
+            </form>
+
+            <button class="startBtn"><img src="./images/start-disabled.png" alt="타이머 시작"></button>
+            <button class="pauseBtn"><img src="./images/pause.png" alt="타이머 중지"></button>
+            <button class="resetBtn"><img src="./images/reset-disabled.png" alt="타이머 초기화"></button>
+
+        </article>
+    </section>
+
+    <script src="./move.js"></script>
+</body>
+
+</html>
